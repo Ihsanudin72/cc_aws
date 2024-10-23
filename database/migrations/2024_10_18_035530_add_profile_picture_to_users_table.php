@@ -9,12 +9,16 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+<<<<<<< HEAD
    /* public function up(): void
+=======
+    public function up()
+>>>>>>> origin/main
     {
         Schema::table('users', function (Blueprint $table) {
-            //
+            $table->string('profile_picture')->nullable()->after('email');
         });
-    }
+    }    
 
     /**
      * Reverse the migrations.
