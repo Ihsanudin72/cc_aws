@@ -9,11 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-<<<<<<< HEAD
-   /* public function up(): void
-=======
     public function up()
->>>>>>> origin/main
     {
         Schema::table('users', function (Blueprint $table) {
             $table->string('profile_picture')->nullable()->after('email');
@@ -23,14 +19,6 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
-    public function up()
-{
-    Schema::table('users', function (Blueprint $table) {
-        $table->string('profile_picture')->nullable()->after('email');
-    });
-}
-
-
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
